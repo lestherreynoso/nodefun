@@ -5,6 +5,8 @@ function start(route, handle) {
 	function onRequest(request, response) {
 		var postData = "";
 		var pathname = url.parse(request.url).pathname;
+
+		// pathname in the form of "/css/main.css" or "/start" or "/"
 		console.log("Request for " + pathname + " received.");
 		
 		request.setEncoding("utf8");
